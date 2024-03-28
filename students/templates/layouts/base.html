@@ -1,0 +1,38 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<!-- css -->
+<link rel="stylesheet" href="{% static  'css/bootstrap.min.css' %}">
+    <title>{% block title %} Title  {%   endblock  %}</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    {% include 'includes/navbar.html' %}
+    
+    {% block content %}   {%   endblock  %}
+
+
+
+    <footer class="mt-auto mb-4">
+        <div class="text-center">
+            <span>
+                Copyright &COPY; 
+                <script>{document.write(new Date().getFullYear())}
+                </script>
+                Bogzoo programming!!
+            </span>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+
+</body>
+</html>
